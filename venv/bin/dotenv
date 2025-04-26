@@ -1,0 +1,8 @@
+#!/run/media/mahabubr/253e3bec-13c8-40a5-aefe-840692731443/poridhi-hackathon/venv/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from dotenv.__main__ import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli())
